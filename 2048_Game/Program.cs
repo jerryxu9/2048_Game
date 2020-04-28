@@ -17,6 +17,9 @@ namespace Game
             int i = 10;
             while(i >= 0){
                 ConsoleKey(myGame);
+                if (myGame.isChanged == false)
+                    continue;
+
                 myGame.GenerateNum();
                 myGame.PrintGame();
                 i--;
